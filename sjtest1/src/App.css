@@ -9,7 +9,7 @@
     text-align: center;
 }
 div {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 .list{
     padding-left: 20px;
