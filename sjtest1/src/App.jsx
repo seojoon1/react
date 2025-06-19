@@ -1,4 +1,4 @@
-import { use, useState } from 'react'
+import { use, useDebugValue, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' //css파일을 사용하려면 상단에 import'css파일 경로'
@@ -8,7 +8,7 @@ function App() {
   const [글제목, TC] = useState([]); //state를 쓰면 html 이 자동 재렌더링 됨
   const [Day, setDay] = useState([]);
   const [Content, setContent] = useState([]);
-  const logo= 'React공부';
+  const logo= '중고나라';
   const [like, likeChange] = useState([]);
   const [modal, setModal] = useState(false); //2현재 UI상태를 state 로 저장
   const [Title, setTitle] = useState(0);
@@ -89,13 +89,6 @@ function Modal(props){ //컴포넌트 1.funtion 만들고 return()안에 html �
         <p>{props.Day[props.Title]}</p>
         <p>{props.Content[props.Title]}</p>
       </div>
-  )
-}
-function Title(props){
-  return(
-    <div>
-
-    </div>
   )
 }
 export default App

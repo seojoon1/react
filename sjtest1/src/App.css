@@ -15,6 +15,7 @@ div {
     padding-left: 20px;
     text-align: left;
     border-bottom: 1px solid gray;
+    color: #eee;
 }
 .list .title{  
     font-weight: 700;
@@ -26,8 +27,11 @@ div {
     text-align: left;
 }
 textarea {
-    width: 100%;
+    width: 300px;
     height: 6.25em;
     border: none;
     resize: none;
+}
+body{
+    background-image: url('C:\reactst\sjtest1\public\img\backgrund,.png');
 }
