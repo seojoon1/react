@@ -1,0 +1,49 @@
+.App{
+  text-align: center;
+}
+.detail{
+    padding-top: 5%;
+}
+/* .detail .col-md-6{
+  text-align: center;
+  align-items: center;
+} */
+.detail .col-md-6 img{
+  width: 100%;
+  height: 100%;
+
+  /* padding-left: 10%; */
+  
+}
+body{
+  margin: 0;
+}
+.customNav{
+  background-color: #5e019c;
+}
+.customNav .nav-link{
+  color: white;
+}
+.customNav .nav-link:hover{
+  color: greenyellow;
+}
+.customNav .navbar-brand{
+  color: white;
+}
+.customNav .navbar-brand:hover{
+  color: greenyellow;
+}
+.main-box{
+  height: 300px;
+  background-image: url("./img/wtf.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+#basic-nav-dropdown{
+  color: white;
+}
+.ListImg{
+  width: 80%;
+  height: 80%;
+}

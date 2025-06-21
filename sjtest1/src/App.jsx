@@ -1,6 +1,4 @@
 import { use, useDebugValue, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css' //css파일을 사용하려면 상단에 import'css파일 경로'
 
 function App() {
