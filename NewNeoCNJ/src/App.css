@@ -19,15 +19,22 @@ body{
   margin: 0;
 }
 .customNav{
-  background-color: #5e019c;
+  background-color: #5e019c; 
 }
+
 .customNav .nav-link{
+  color: white;
+}
+.customNav .nav-link:focus:visited{
   color: white;
 }
 .customNav .nav-link:hover{
   color: greenyellow;
 }
 .customNav .navbar-brand{
+  color: white;
+}
+.customNav .navbar-brand:focus:visited{
   color: white;
 }
 .customNav .navbar-brand:hover{
@@ -46,4 +53,8 @@ body{
 .ListImg{
   width: 80%;
   height: 80%;
+}
+.List {
+  text-decoration: none;
+  color: black;
 }

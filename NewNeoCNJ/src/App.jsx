@@ -5,6 +5,7 @@ import { Nav, Navbar, Container, NavDropdown, Col, Row} from 'react-bootstrap';
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 import data from './data.jsx';
 import Detail from './detail1.jsx';
+import detail from './detail1.jsx';
 function App() {
   const[goods, setgoods] = useState(data)
   const navigate = useNavigate();
@@ -16,8 +17,8 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/detail">어쩌구</Nav.Link>
-            <Nav.Link href="#link">저쩌구</Nav.Link>
+            <Nav.Link href="*">어쩌구</Nav.Link>
+            <Nav.Link href="*">저쩌구</Nav.Link>
             <NavDropdown title={<span className='NDDT'>문의하기</span>} id="basic-nav-dropdown">
               <NavDropdown.Item href="/event/one">이벤트1</NavDropdown.Item>
               <NavDropdown.Item href="/event/two">
@@ -41,15 +42,15 @@ function App() {
                   {
                   goods.map((a,i)=>{
                     return(
-                    <List key={a.id} goods = {goods[i]} i = {i}/> //네스트라우트 가능
+                    <List key={a.id} goods = {goods[i]} i = {i} /> //네스트라우트 가능
                   )
                 })
                 }
                 </Row>
               </Container>
         </div>} />
-        <Route path='/detail' element={
-          <Detail goods = {goods[0]}/>
+        <Route path='/detail/:id' element={ //url 파라미터
+          <Detail goods = {goods}/>
           } />
         <Route path='*' element={<div><h1>어 나가~</h1></div>}/>
         <Route path='/about' element={<About/>}>
@@ -65,10 +66,12 @@ function App() {
 }
 function List(props){
   return(
-      <Col>
+      <Col >
+        <Link to={`/detail/${props.goods.id}`} className='List'>
           <img src={props.goods.img} className='ListImg'/>
           <h4>{props.goods.title}</h4>
           <p>{props.goods.price}</p>
+        </Link>
       </Col>
   )
 }

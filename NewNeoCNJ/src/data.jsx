@@ -16,9 +16,9 @@ price : 110000
 },
 
 {
-    img : "/차원이취향.png",
+    img : "/test3.png",
 id : 2,
-title : "애니",
+title : "이송글",
 content : "Born in the States",
 price : 130000
 }
